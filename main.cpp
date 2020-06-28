@@ -46,7 +46,7 @@ int main() {
     for (int i = 0; i < TESTDATASIZE; i++) {
         if (hashtable.insertEntry(testData[i].id, testData[i].data)) {
             cout << "success. entry inserted." << endl;
-            cout << "There are " << hashtable.getCount() << " entries." << endl << endl;
+            cout << "There are " << hashtable.getCount() << " entries in the table." << endl << endl;
         } else {
             cout << "failed. table is likely full." << endl;
         }
@@ -109,6 +109,7 @@ int main() {
      * Printing Table (traverse)
      */
     cout << "Hash Table Traversal..." << endl;
+    cout << "There are " << hashtable.getCount() << " entries in the table." << endl << endl;
     hashtable.printTable();
     cout << endl;
 
