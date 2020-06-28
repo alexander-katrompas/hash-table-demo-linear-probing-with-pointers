@@ -86,6 +86,7 @@ bool Hashtable::deleteEntry(int id) {
             delete hashtable[position];
             hashtable[position] = nullptr;
             del = true;
+            count--;
         } else {
             if (position == HASHTABLESIZE - 1) {
                 position = 0;
